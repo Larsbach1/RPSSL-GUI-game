@@ -1,0 +1,48 @@
+<!-- GUI layout til RPSSL spillet med emojis og pointtavle -->
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="RPSSL_GUI_game.MainWindow"
+        Title="Rock Paper Scissors Spock Lizard"
+        Width="520" Height="360">
+
+    <StackPanel Margin="20" Spacing="12">
+
+        <!-- Overskrift -->
+        <TextBlock Text="Vælg dit træk:" FontWeight="Bold" FontSize="20"/>
+
+        <!-- Knapper til valg med emojis-->
+        <StackPanel Orientation="Horizontal" Spacing="8">
+            <Button Content="🪨 Rock"     Click="OnChoiceClick"/>
+            <Button Content="📄 Paper"    Click="OnChoiceClick"/>
+            <Button Content="✂️ Scissors" Click="OnChoiceClick"/>
+            <Button Content="🦎 Lizard"   Click="OnChoiceClick"/>
+            <Button Content="🖖 Spock"    Click="OnChoiceClick"/>
+        </StackPanel>
+
+        <!-- Computerens valg -->
+        <TextBlock x:Name="ComputerValg" 
+                   Text="Computerens valg vises her." 
+                   FontSize="20"/>
+
+        <!-- Resultat -->
+        <TextBlock x:Name="Resultat"
+                   Text="Resultat vises her."
+                   FontSize="24" FontWeight="SemiBold"/>
+
+        <!-- Pointtavle -->
+        <TextBlock x:Name="Point" 
+                   Text="Score: Spiller 0 – Computer 0 – Uafgjort 0"
+                   FontSize="18" FontWeight="Bold"/>
+
+        <!-- Emoji-feedback -->
+        <TextBlock x:Name="Emoji" 
+                   Text=""
+                   FontSize="32" 
+                   HorizontalAlignment="Center"/>
+
+        <!-- Statuslinje -->
+        <TextBlock x:Name="Status" 
+                   Foreground="Gray" 
+                   FontStyle="Italic"/>
+    </StackPanel>
+</Window>
