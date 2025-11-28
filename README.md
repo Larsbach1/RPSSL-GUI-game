@@ -31,4 +31,4 @@ dotnet publish -c Release -r win-x64 --self-contained true
 
 Bemærkning
 
-Fundamentet til programmet og ReadMe er lavet med hjælp fra AI, derefter tilpasset til opgaven.
+Fundamentet til opbygning af programmet og ReadMe er lavet med hjælp fra AI, Programmet er skrevet med egen kode, og AI er derefter brugt til feedback så jeg kan tilrette kodens fejl.
